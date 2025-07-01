@@ -1,10 +1,129 @@
+# 🌸 K-Nearest Neighbors (KNN) Classifier on Iris Dataset
 
-# KNN Classifier on Iris Dataset
+This project demonstrates the implementation of the **K-Nearest Neighbors (KNN)** algorithm on the classic **Iris dataset**. It includes data preprocessing, training and evaluation with different values of **K**, performance visualization, and decision boundary plots.
 
-## Files Included
-- Iris.csv: Raw dataset
-- knn_accuracy_plot.png: Accuracy vs K plot
-- confusion_matrix.png: Confusion matrix heatmap
-- decision_boundary.png: Decision boundary using 2 features
-- knn_classifier.py: Python script
-- README.txt: Project summary
+---
+
+## 📂 Project Structure
+
+```
+
+KNN\_Iris\_Project/
+│
+├── Iris.csv                    # Original dataset
+├── knn\_classifier.py          # Main Python script for training & evaluation
+├── knn\_accuracy\_plot.png      # Accuracy vs K plot
+├── confusion\_matrix.png       # Heatmap of confusion matrix
+├── decision\_boundary.png      # 2D decision boundary using two features
+├── README.md                  # Project description
+
+````
+
+---
+
+## 📊 Dataset
+
+We use the **Iris dataset**, which contains:
+- **150** samples
+- **3 classes** of iris plant: *Iris-setosa*, *Iris-versicolor*, and *Iris-virginica*
+- **4 numerical features**: Sepal Length, Sepal Width, Petal Length, Petal Width
+
+> Source: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Iris)
+
+---
+
+## ⚙️ Tools & Libraries
+
+- Python 3.x
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+
+---
+
+## 🚀 How to Run
+
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/your-username/KNN_Iris_Project.git
+    cd KNN_Iris_Project
+    ```
+
+2. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Run the script:
+    ```bash
+    python knn_classifier.py
+    ```
+
+---
+
+## 🔍 What This Project Does
+
+- Normalizes features using `StandardScaler`
+- Splits data into train/test sets
+- Trains `KNeighborsClassifier` with various K values
+- Plots:
+  - Accuracy vs. K
+  - Confusion matrix heatmap
+  - 2D decision boundary (using first two features)
+- Outputs best-performing K value
+
+---
+
+## 📈 Visualizations
+
+### Accuracy vs. K
+![Accuracy Plot](knn_accuracy_plot.png)
+
+### Confusion Matrix
+![Confusion Matrix](confusion_matrix.png)
+
+### Decision Boundary
+![Decision Boundary](decision_boundary.png)
+
+---
+
+## ❓ Interview Preparation
+
+### How does KNN work?
+- It stores all training instances.
+- To classify a new point, it finds the **K nearest neighbors** and assigns the majority label.
+
+### Why normalize features?
+- KNN uses distance metrics; larger-scaled features dominate unless standardized.
+
+### How to choose K?
+- Use cross-validation or accuracy plots. Too low → overfit. Too high → underfit.
+
+### Pros and Cons of KNN
+✅ Simple and effective  
+❌ Computationally expensive at prediction time
+
+### Time complexity
+- **Training:** O(1)  
+- **Prediction:** O(n \* d), where n = training size, d = feature dimensions
+
+---
+
+## 🧠 Author
+
+**[Your Name]**  
+*ML Developer | Data Science Enthusiast*
+
+---
+
+## 📄 License
+
+This project is open-source under the [MIT License](LICENSE).
+
+````
+
+---
+
+Let me know if you'd like a version with your GitHub profile or tailored for Jupyter notebooks!
