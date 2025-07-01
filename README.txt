@@ -78,15 +78,14 @@ We use the **Iris dataset**, which contains:
 
 ## 📈 Visualizations
 
-### Decision Boundary
 
 ![Image](https://github.com/user-attachments/assets/2144ceda-4960-43a1-91ba-aa4bfb0e1a7f)
 
-### Confusion Matrix
+
 
 ![Image](https://github.com/user-attachments/assets/98bc84e5-717c-46a3-b2d0-1daa1f93f7dc)
 
-### Accuracy Plot
+
 
 ![Image](https://github.com/user-attachments/assets/c30372e6-dcc1-45aa-b24b-41e22c149257)
 
